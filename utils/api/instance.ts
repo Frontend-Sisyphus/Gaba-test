@@ -5,9 +5,25 @@ const apiInstance = axios.create({
   timeout: 10000,
 });
 
+const pendingRequests = new Map();
+
 // На будущее, если нам надо будет перехватывать запрос
 apiInstance.interceptors.request.use(
   (config) => {
+    const key = `${config.method}:${config.url}:${JSON.stringify(config.params)}`;
+
+    if (pendingRequests.has(key)) {
+      return pendingRequests.get(key);
+    }
+
+    const promise = apiInstance(config);
+
+    pendingRequests.set(key, promise);
+
+    promise.finally(() => {
+      pendingRequests.delete(key);
+    });
+
     return config;
   },
   (error) => {
