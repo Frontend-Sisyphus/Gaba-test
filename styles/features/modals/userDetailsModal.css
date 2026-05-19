@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+/* Section */
+.info-section {
+  @apply bg-gray-50 dark:bg-gray-900/50 rounded-xl p-5 border border-gray-100 dark:border-gray-700;
+}
+
+.info-section__title {
+  @apply text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3;
+}
+
+.info-section__content {
+  @apply space-y-2;
+}
+
+/* Row  */
+.info-row {
+  @apply flex justify-between items-start gap-4;
+}
+
+.info-row__label {
+  @apply text-gray-500 dark:text-gray-400 text-sm;
+}
+
+.info-row__value {
+  @apply text-gray-900 dark:text-white text-sm font-medium text-right break-all;
+}
+
+.info-row__value--mono {
+  @apply font-mono text-xs;
+}
+
+.info-row__value--code {
+  @apply font-mono text-xs bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded;
+}
+
+/* Основной компонент */
+.user-details {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4;
+}
+
+.user-details__modal {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto;
+}
+
+.user-details__header {
+  @apply sticky top-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-b dark:border-gray-700 p-6 flex justify-between items-start z-10;
+}
+
+.user-details__header-info {
+  @apply flex items-center gap-4;
+}
+
+.user-details__avatar {
+  @apply w-16 h-16 rounded-full ring-4 ring-gray-100 dark:ring-gray-700;
+}
+
+.user-details__name-wrapper {
+  
+}
+
+.user-details__name {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.user-details__maiden-name {
+  @apply text-gray-500 dark:text-gray-400 text-lg font-normal;
+}
+
+.user-details__meta {
+  @apply flex items-center gap-2 mt-1;
+}
+
+.user-details__meta-separator {
+  @apply text-gray-400;
+}
+
+.user-details__meta-text {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.user-details__actions {
+  @apply flex gap-2;
+}
+
+.user-details__action-button {
+  @apply px-4 py-2 rounded-lg transition-colors text-sm font-medium;
+}
+
+.user-details__action-button--edit {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.user-details__action-button--delete {
+  @apply bg-red-600 text-white hover:bg-red-700;
+}
+
+.user-details__close-button {
+  @apply p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors;
+}
+
+.user-details__close-icon {
+  @apply w-5 h-5;
+}
+
+.user-details__body {
+  @apply p-6 grid grid-cols-1 md:grid-cols-2 gap-6;
+}
