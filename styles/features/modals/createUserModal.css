@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.create-user-modal {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4;
+}
+
+.create-user-modal__modal {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto;
+}
+
+.create-user-modal__header {
+  @apply sticky top-0 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-b dark:border-gray-700 p-6 flex justify-between items-center z-10;
+}
+
+.create-user-modal__title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.create-user-modal__close-button {
+  @apply p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors;
+}
+
+.create-user-modal__close-icon {
+  @apply w-5 h-5;
+}
+
+.create-user-modal__body {
+  @apply p-6;
+}

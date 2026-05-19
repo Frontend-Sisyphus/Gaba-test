@@ -84,7 +84,7 @@
 }
 
 .user-details__action-button {
-  @apply px-4 py-2 rounded-lg transition-colors text-sm font-medium;
+  @apply px-4 py-2 rounded-lg transition-colors text-sm font-medium cursor-pointer;
 }
 
 .user-details__action-button--edit {
@@ -96,7 +96,7 @@
 }
 
 .user-details__close-button {
-  @apply p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors;
+  @apply p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors cursor-pointer;
 }
 
 .user-details__close-icon {
