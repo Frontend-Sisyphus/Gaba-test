@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { Geist, Geist_Mono } from "next/font/google";
 
-import TanstackProvider from "@/utils/providers/TanstackProvider";
+import TanstackProvider from "./providers/TanstackProvider";
 
 import "./globals.css";
 
