@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.pagination {
+  @apply flex items-center justify-between mt-6;
+}
+
+.pagination__info {
+  @apply text-sm text-gray-700 dark:text-gray-400;
+}
+
+.pagination__info-highlight {
+  @apply font-medium;
+}
+
+.pagination__controls {
+  @apply flex items-center gap-1.5;
+}
+
+.pagination__button {
+  @apply px-3 py-1.5 text-sm font-medium rounded-lg border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 transition-colors;
+}
+
+.pagination__button--active {
+  @apply bg-blue-600 text-white shadow-sm border-blue-600 hover:bg-blue-700 dark:hover:bg-blue-700;
+}
+
+.pagination__button--disabled {
+  @apply opacity-40 cursor-not-allowed hover:bg-transparent dark:hover:bg-transparent;
+}
+
+.pagination__ellipsis {
+  @apply px-1 text-gray-400;
+}
