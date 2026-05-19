@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.spinner {
+  @apply flex justify-center items-center py-12;
+}
+
+.spinner__circle {
+  @apply animate-spin rounded-full border-b-2 border-blue-600;
+}
+
+.spinner__circle--sm {
+  @apply h-6 w-6;
+}
+
+.spinner__circle--md {
+  @apply h-10 w-10;
+}
+
+.spinner__circle--lg {
+  @apply h-16 w-16;
+}
