@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+.delete-confirm {
+  @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4;
+}
+
+.delete-confirm__modal {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-md w-full p-6;
+}
+
+.delete-confirm__content {
+  @apply text-center;
+}
+
+.delete-confirm__icon-wrapper {
+  @apply mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 dark:bg-red-900 mb-4;
+}
+
+.delete-confirm__icon {
+  @apply h-8 w-8 text-red-600 dark:text-red-400;
+}
+
+.delete-confirm__title {
+  @apply text-lg font-semibold text-gray-900 dark:text-white mb-2;
+}
+
+.delete-confirm__description {
+  @apply text-gray-500 dark:text-gray-400 mb-6;
+}
+
+.delete-confirm__username {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.delete-confirm__actions {
+  @apply flex gap-3;
+}
+
+.delete-confirm__button {
+  @apply flex-1 px-4 py-2.5 rounded-xl transition-colors font-medium;
+}
+
+.delete-confirm__button--cancel {
+  @apply border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700;
+}
+
+.delete-confirm__button--delete {
+  @apply bg-red-600 text-white hover:bg-red-700 disabled:opacity-50;
+}
