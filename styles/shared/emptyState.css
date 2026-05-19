@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.empty-state {
+  @apply text-center py-16 px-4;
+}
+
+.empty-state__default-icon {
+  @apply mx-auto h-16 w-16 text-gray-400;
+}
+
+.empty-state__title {
+  @apply mt-4 text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.empty-state__description {
+  @apply mt-2 text-gray-500 dark:text-gray-400 max-w-sm mx-auto;
+}
+
+.empty-state__action {
+  @apply mt-6;
+}

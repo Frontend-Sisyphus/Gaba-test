@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.error-state {
+  @apply text-center py-16 px-4;
+}
+
+.error-state__icon {
+  @apply mx-auto h-16 w-16 text-red-400;
+}
+
+.error-state__title {
+  @apply mt-4 text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.error-state__message {
+  @apply mt-2 text-red-500 max-w-sm mx-auto;
+}
+
+.error-state__action {
+  @apply mt-6;
+}
+
+.error-state__retry-button {
+  @apply px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium;
+}
