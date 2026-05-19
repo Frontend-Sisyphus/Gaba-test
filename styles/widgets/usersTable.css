@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+.sort-icon {
+  @apply w-4 h-4 ml-1 inline-block;
+}
+
+.sort-icon--inactive {
+  @apply text-gray-400;
+}
+
+.sort-icon--active {
+  @apply text-blue-600 transition-transform;
+}
+
+.sort-icon--desc {
+  @apply rotate-180;
+}
+
+.users-table {
+  @apply overflow-hidden bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700;
+}
+
+.users-table__scroll {
+  @apply overflow-x-auto;
+}
+
+.users-table__table {
+  @apply w-full;
+}
+
+.users-table__head {
+  @apply bg-gray-50 dark:bg-gray-900/50;
+}
+
+.users-table__head-cell {
+  @apply px-6 py-3 text-left text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider;
+}
+
+.users-table__head-cell--sortable {
+  @apply cursor-pointer hover:text-gray-700 dark:hover:text-gray-300 select-none;
+}
+
+.users-table__body {
+  @apply divide-y divide-gray-200 dark:divide-gray-700;
+}
+
+.users-table__row {
+  @apply hover:bg-gray-50 dark:hover:bg-gray-700/50 cursor-pointer transition-colors;
+}
+
+.users-table__cell {
+  @apply px-6 py-4 whitespace-nowrap;
+}
+
+.users-table__avatar-wrapper {
+  
+}
+
+.users-table__avatar {
+  @apply h-10 w-10 rounded-full ring-2 ring-transparent group-hover:ring-blue-500 transition-all object-cover;
+}
+
+.users-table__user-info {
+  
+}
+
+.users-table__user-name {
+  @apply text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.users-table__user-username {
+  @apply text-xs text-gray-500 dark:text-gray-400;
+}
+
+.users-table__age-badge {
+  @apply inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.users-table__email {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+.users-table__city {
+  @apply text-sm text-gray-700 dark:text-gray-300;
+}
+
+.users-table__company {
+  @apply text-sm text-gray-500 dark:text-gray-400 max-w-[200px] truncate;
+}
